@@ -1,5 +1,5 @@
 # newTC1
-Replacement for nerdaqII seismomenter code for DIY TC1-like seismometers (for construction notes see 
+Replacement for nerdaqII seismomenter code for DIY TC1-like seismometers. For seismometer construction notes see 
 
 https://www.boisestate.edu/eslab/building-a-tc1-system/construction-of-the-tc1/
 
