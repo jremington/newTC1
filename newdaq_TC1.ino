@@ -20,8 +20,8 @@ volatile unsigned int next_sample;
 
 
 
-// low pass filter and parameters for DC offset removal
-// see nice discussion at
+// high pass filter and parameters for DC offset removal
+// see nice discussion at (archived on the Wayback Machine)
 // https://openenergymonitor.org/emon/buildingblocks/digital-filters-for-offset-removal
 // time constant for 10 bit shift =(1-1/1024)/(1/1024)  = 1023 sample intervals
 
