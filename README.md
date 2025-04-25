@@ -1,7 +1,7 @@
 # newTC1
-Replacement for nerdaqII seismomenter code for DIY TC-1-like seismometers. For seismometer construction notes see 
+Replacement for nerdaqII seismomenter code for DIY TC-1-like seismometers. 
 
-https://www.boisestate.edu/eslab/building-a-tc1-system/construction-of-the-tc1/
+For seismometer construction notes see https://www.boisestate.edu/eslab/building-a-tc1-system/construction-of-the-tc1/
 
 The [nerdaqII code](https://github.com/brianxfury/Low-Cost-Arduino-based-Seismometer-Project/tree/master) is an odd combination of filters that interact to produce a bizarre oscillatory response to an impulse, which takes a couple of minutes to settle. I don't think it was ever tested properly. This code replaces it with an advanced decimating, downsampling antialiasing filter, which however uses the same oversampling and averaging approach to get 16 bits out of a 10 bit ADC. Four sets of 128 raw data samples are averaged and downsampled+antialiased to produce each data point.
 
