@@ -1,5 +1,5 @@
 # newTC1
-Replacement for nerdaqII seismomenter code for DIY TC1-like seismometers. For seismometer construction notes see 
+Replacement for nerdaqII seismomenter code for DIY TC-1-like seismometers. For seismometer construction notes see 
 
 https://www.boisestate.edu/eslab/building-a-tc1-system/construction-of-the-tc1/
 
@@ -10,3 +10,10 @@ I've added a slow DC offset removal filter, with a very slow decay (several minu
 Output sample rate is 18.8 SPS on an Arduino Uno R3 or other ATmega board with 16 MHz clock.
  
 In JamaSeis, select the SEP detector, not the TC1 detector which expects a DC offset of 32768.
+
+UPDATE 4/25/2025:  
+S-wave recording of magnitude 6.3 earthquake at distance 6300 km
+near Esmeraldas, Ecuador 2025-04-25 11:44:55 (UTC) 1.105°N 79.535°W
+using TC-1 detector located on west coast U.S. at 44°N 123°W
+
+![ksnip_20250425-120444ed](https://github.com/user-attachments/assets/884d0725-39b6-4b96-8ff3-9fd08030f7e6)
