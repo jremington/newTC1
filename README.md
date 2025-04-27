@@ -25,7 +25,9 @@ X-axis scale is seconds.
 
 **Comparison with RaspberryShake**
 
-I've recently spent some time experimenting with a RaspberryShake setup, and am very disappointed. I have concluded that without great care in filtering the data, the RaspberryShake is **not an improvement** over DIY TC-1-like seismometers. The extra resolution, higher bandwidth and sensitivity of the geophone and 24 bit ADC appear to result mostly in additional noise, actually reducing the signal to noise ratio (SNR). Perhaps the geophone mountings in typical installations are not satisfactory, as I've seen pictures of them just sitting in plastic boxes. Mine sits on the same concrete floor next to the TC-1, in a very quiet location, and gives signals with similar or lower SNR to those from the TC-1.
+I've recently spent some time experimenting with a setup very similar to the RaspberryShake (same geophone, SeismicStream 24bit 100 SPS ADC), and have examined data sets available to the public from RaspberryShake stations. 
+
+I am very disappointed in their performance. I have concluded that without great care in filtering the data, the RaspberryShake is **not an improvement** over DIY TC-1-like seismometers. The extra resolution, higher bandwidth and sensitivity of the geophone and 24 bit ADC appear to result mostly in additional noise, actually reducing the signal to noise ratio (SNR). Perhaps the geophone mountings in typical installations are not satisfactory, as I've seen pictures of them just sitting in plastic boxes. Mine sits on the same concrete floor next to the TC-1, in a very quiet location, and gives signals with similar or lower SNR to those from the TC-1.
 
 Below is a screenshot comparing three west coast U.S. stations recording at the time of the 6.3 magnitude event pictured above (4/25/2025 11:45 UTC). The top two seismograms are apparently DIY seismometers: one in Bend, Oregon, the other in Camerillo, California, bottom a RaspberryShake station in Portland, Oregon. The problem is obvious!
 
