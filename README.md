@@ -1,6 +1,6 @@
 # newTC1
 
-This repository presents an improved replacement for nerdaqII seismomenter code for DIY TC-1-like seismometers. 
+This repository presents improved data acquistion code as a replacement for nerdaqII code for DIY TC-1-like seismometers. 
 
 For seismometer construction notes see https://www.boisestate.edu/eslab/building-a-tc1-system/construction-of-the-tc1/
 
