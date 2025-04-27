@@ -12,7 +12,7 @@ Output sample rate is 18.8 SPS on an Arduino Uno R3 or other ATmega board with 1
  
 In JamaSeis, select the SEP detector, not the TC1 detector which expects a DC offset of 32768.
 
-# UPDATE 4/25/2025:  
+# Update 4/25/2025:  
 S-wave recording from distance of 6300 km of magnitude 6.3 earthquake
 near Esmeraldas, Ecuador on 2025-04-25 11:44:55 (UTC), GPS coords 1.105°N 79.535°W.
 Recorded using a DIY TC-1 detector with the posted code, located on west coast U.S. near GPS coordinates 44°N 123°W
