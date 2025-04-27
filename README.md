@@ -3,6 +3,7 @@
 This repository presents improved data acquistion code as a replacement for nerdaqII code for DIY TC-1-like seismometers. 
 
 For seismometer construction notes see https://www.boisestate.edu/eslab/building-a-tc1-system/construction-of-the-tc1/
+![Tc1-001](https://github.com/user-attachments/assets/85fe7691-ba6a-405a-adf2-42fa054a5c9a)
 
 The [nerdaqII code](https://github.com/brianxfury/Low-Cost-Arduino-based-Seismometer-Project/tree/master) is an odd combination of filters that interact to produce a bizarre oscillatory response to an impulse, which takes a couple of minutes to settle. I don't think it was ever tested properly. This code replaces it with an advanced decimating, downsampling antialiasing filter, which however uses the same oversampling and averaging approach to get 16 bits out of a 10 bit ADC. Four sets of 128 raw data samples are averaged and downsampled+antialiased to produce each data point.
 
