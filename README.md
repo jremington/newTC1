@@ -21,7 +21,8 @@ Event: 2025-04-25 11:44:55 (UTC), GPS coords 1.105°N 79.535°W.
 Recorded using a DIY TC-1 detector with the posted code, located on west coast U.S. near GPS coordinates 44°N 123°W, **distance to source 6300 km.**
 X-axis scale is seconds.
 
-![ksnip_20250425-120444ed](https://github.com/user-attachments/assets/884d0725-39b6-4b96-8ff3-9fd08030f7e6)
+![TC1_20_90](https://github.com/user-attachments/assets/e0e724d2-ad06-4077-bbe6-5fcb71d6b96c)
+
 
 **Comparison with RaspberryShake**
 
