@@ -12,8 +12,7 @@ In JamaSeis, select the SEP detector, not the TC1 detector which expects a DC of
 
 For seismometer construction notes see https://www.boisestate.edu/eslab/building-a-tc1-system/construction-of-the-tc1/
 
-![Tc1-001](https://github.com/user-attachments/assets/85fe7691-ba6a-405a-adf2-42fa054a5c9a)
-
+<img align="right" height="400" src="https://github.com/user-attachments/assets/85fe7691-ba6a-405a-adf2-42fa054a5c9a">
 
 # Update 4/25/2025:  
 S-wave recording of magnitude 6.3 earthquake near Esmeraldas, Ecuador  
