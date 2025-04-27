@@ -18,7 +18,7 @@ S-wave recording of magnitude 6.3 earthquake near Esmeraldas, Ecuador
 
 Event: 2025-04-25 11:44:55 (UTC), GPS coords 1.105°N 79.535°W.
 
-Recorded using a DIY TC-1 detector with the posted code, located on west coast U.S. near GPS coordinates 44°N 123°W, **distance to source 6300 km.**
+Recorded using the DIY TC-1 detector pictured above with the posted code, located on west coast U.S. near GPS coordinates 44°N 123°W, **distance to source 6300 km.**
 X-axis scale is seconds.
 
 ![TC1_20_90](https://github.com/user-attachments/assets/e0e724d2-ad06-4077-bbe6-5fcb71d6b96c)
