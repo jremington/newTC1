@@ -32,9 +32,7 @@ I am very disappointed in their performance. I have concluded that without great
 
 ![TC1_SS18](https://github.com/user-attachments/assets/9a2ee325-5ddc-4cc7-890d-dfeb0ad4b2bb)
 
-
 Below is a screenshot comparing three west coast U.S. stations recording at the time of the 6.3 magnitude event pictured above (4/25/2025 11:45 UTC). The top two seismograms are apparently DIY seismometers: one in Bend, Oregon, the other in Camerillo, California, bottom a RaspberryShake station in Portland, Oregon. The problem is obvious!
-
 
 ![RPi_shake](https://github.com/user-attachments/assets/362a665e-43f9-4991-b02b-1ddb8310f0b5)
 
