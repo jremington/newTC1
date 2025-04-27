@@ -24,12 +24,12 @@ X-axis scale is seconds.
 
 I've recently spent some time experimenting with a RaspberryShake setup, and am very disappointed. I have concluded that Shake is **not an improvement** over DIY TC-1 like seismometers. The extra resolution, much higher bandwidth and sensitivity of the geophone and 24 bit ADC seems to result mostly in additional noise, with little or no improvement in signal to noise ratio (SNR). Perhaps the geophone mountings are not satisfactory, as I've seen pictures of them just sitting in plastic boxes.
 
-Below is a screenshot comparing three stations recording at the time of the 6.3 magnitiude event pictured above. Theop two are DIY seismometers: one in Bend, Oregon, the other in Camerillo, California, bottom a RaspberryShake station in Portland, Oregon. It is not hard to see the problem!
+Below is a screenshot comparing three stations recording at the time of the 6.3 magnitude event pictured above (4/25/2025 11:45 UTC). The top two seismograms are apparently DIY seismometers: one in Bend, Oregon, the other in Camerillo, California, bottom a RaspberryShake station in Portland, Oregon. It is not hard to see the problem!
 
 
 ![RPi_shake](https://github.com/user-attachments/assets/362a665e-43f9-4991-b02b-1ddb8310f0b5)
 
-If the RaspberryShake data are bandpass filtered (1 Hz cutoff applied in JamaSeis), a signal possibly corresponding to that earthquake becomes visible (yellow highlighting).
+If the RaspberryShake data are low pass filtered, by applying a 1 Hz cutoff in JamaSeis, a signal possibly corresponding to that earthquake becomes visible (yellow highlighting).
 
 ![RPi_shake_LP1s](https://github.com/user-attachments/assets/bfc5a99c-2395-4c87-9ff9-fb9e6c51bd73)
 
