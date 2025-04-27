@@ -20,9 +20,10 @@ X-axis scale is seconds.
 
 ![ksnip_20250425-120444ed](https://github.com/user-attachments/assets/884d0725-39b6-4b96-8ff3-9fd08030f7e6)
 
-Incidentally, I've spent some time playing around with a **RaspberryShake setup**, and have concluded that **it is not an improvement** over DIY TC-1 like seismometers. The extra resolution and sensitivity of the geophone and 24 bit ADC seems to result in additional noise, with little or no improvement in signal to noise ratio (SNR).
+**Comparison with RaspberryShake**
+Incidentally, I've spent some time playing around with a RaspberryShake setup, and was very disappointed. I have concluded that **it is not an improvement** over DIY TC-1 like seismometers. The extra resolution and sensitivity of the geophone and 24 bit ADC seems to result in additional noise, with little or no improvement in signal to noise ratio (SNR).
 
-Below is a screenshot comparing three stations recording at the time of the 6.3 magnitiude event pictured above, with a RaspberryShake station at the bottom. It is not hard to see the problem!
+Below is a screenshot comparing three stations recording at the time of the 6.3 magnitiude event pictured above, (top two are DIY seismometers, bottom a RaspberryShake station. It is not hard to see the problem!
 
 
 ![RPi_shake](https://github.com/user-attachments/assets/362a665e-43f9-4991-b02b-1ddb8310f0b5)
