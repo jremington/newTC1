@@ -32,7 +32,7 @@ I am very disappointed in their performance. I have concluded that without great
 
 I'm not the first to comment on this, for example see: https://soylentnews.org/submit.pl?op=viewsub&subid=64699
 
-My detectors sit on the concrete floor of an unoccupied building far from any roads in a very quiet location, and a comparison for the event above shows that the geophone/SeismicStream response has similar or lower SNR to that from the TC-1, as shown below:
+My detectors sit on the concrete floor of an unoccupied building far from any roads in a very quiet location, and a comparison for the event above shows that the geophone/SeismicStream response (SS-18, top) has similar or lower SNR to that from the TC-1, as shown below:
 
 ![TC1_SS18](https://github.com/user-attachments/assets/9a2ee325-5ddc-4cc7-890d-dfeb0ad4b2bb)
 
