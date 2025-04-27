@@ -3,7 +3,7 @@
 // Started with nerdaqII and replaced the filtering with a
 // fast downsampling (decimating with antialiasing) algorithm in a cascade
 // https://www.musicdsp.org/en/latest/Filters/214-fast-downsampling-with-antialiasing.html
-// Each source sample is convolved with { 0.25, 0.5, 0.25 } before downsampling.
+// Each source sample is convolved with a triangular envelope { 0.25, 0.5, 0.25 } before downsampling.
 // for a 16 MHz AVR clock, the ADC rate is 9615.4 sps
 // output sample rate is 18.8 SPS, zero centered.
 // S. James Remington 4/2025
