@@ -41,7 +41,7 @@ Below is a screenshot comparing three west coast U.S. stations recording at the 
 
 ![RPi_shake](https://github.com/user-attachments/assets/362a665e-43f9-4991-b02b-1ddb8310f0b5)
 
-If the RaspberryShake data are **low pass filtered** (5s filter in JamaSeis), a signal corresponding to that earthquake becomes apparent.
+If the RaspberryShake data are **externally low pass filtered** (post-processed, in this case 5s filter in JamaSeis), a signal corresponding to that earthquake becomes apparent.
 
 ![RPiShake_5s](https://github.com/user-attachments/assets/79e27686-0a3c-437f-99a8-a4c933cefa1d)
 
