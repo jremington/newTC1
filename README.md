@@ -26,11 +26,12 @@ X-axis scale is seconds.
 
 **Comparison with RaspberryShake**
 
-I've recently spent some time experimenting with a setup very similar to the RaspberryShake (same 4.5 Hz geophone, SeismicStream 24bit 100 SPS ADC module), and have examined data sets available to the public from RaspberryShake stations. 
+I've recently spent some time experimenting with a setup very similar to the RaspberryShake (same 4.5 Hz geophone, SeismicStream 24bit, 25 - 100 SPS ADC module), and have examined data sets available to the public from RaspberryShake stations. 
 
-I am very disappointed in their performance. I have concluded that without great care in filtering the data, the RaspberryShake is **not an improvement** over DIY TC-1-like seismometers, at least in very quiet locations like mine. The extra resolution, higher bandwidth and sensitivity of the geophone and 24 bit ADC appear to result mostly in additional noise, actually reducing the signal to noise ratio (SNR) for signals from distant earthquakes.
+I am very disappointed in their performance. I have concluded that without great care in filtering the data, the RaspberryShake is **not an improvement** over DIY TC-1-like seismometers, at least in very quiet locations like mine. The extra resolution, higher bandwidth and sensitivity of the geophone and 24 bit ADC appear to result mostly in additional noise, actually reducing the signal to noise ratio (SNR) for low frequency signals from distant earthquakes.
 
 I'm not the first to comment on this, for example see: https://soylentnews.org/submit.pl?op=viewsub&subid=64699
+Here is his solution: a swinging beam seismometer with very low frequency response: https://spectrum.ieee.org/build-a-better-diy-seismometer
 
 My detectors sit on the concrete floor of an unoccupied building far from any roads in a very quiet location, and a comparison for the event above shows that the geophone/SeismicStream response (SS18, top) has similar or lower SNR to that from the TC-1 (bottom), as shown below:
 
