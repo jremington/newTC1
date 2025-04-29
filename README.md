@@ -33,7 +33,7 @@ I am very disappointed in their performance. I have concluded that without great
 I'm not the first to comment on this, for example see this summary at: https://soylentnews.org/submit.pl?op=viewsub&subid=64699
 The author's solution was a DIY swinging boom seismometer with very low frequency response: https://spectrum.ieee.org/build-a-better-diy-seismometer
 
-My detectors sit on the concrete floor of an unoccupied building far from any roads in a very quiet location, and a comparison for the event above shows that the geophone/SeismicStream response (SS18, top) has similar or lower SNR to that from the TC-1 (bottom), as shown below:
+My detectors sit on the concrete floor of an unoccupied building far from any roads in a very quiet location, and a comparison for the Ecuador event above shows that the geophone/SeismicStream response (SS18, top) has similar or lower SNR to that from the TC-1 (bottom), as shown below:
 
 ![TC1_SS18](https://github.com/user-attachments/assets/9a2ee325-5ddc-4cc7-890d-dfeb0ad4b2bb)
 
@@ -41,7 +41,7 @@ Below is a screenshot comparing three west coast U.S. station recordings at the 
 
 ![RPi_shake](https://github.com/user-attachments/assets/362a665e-43f9-4991-b02b-1ddb8310f0b5)
 
-Only when the RaspberryShake data are **externally low pass filtered** (post-processed, in this case 5s filter in JamaSeis), does a signal corresponding to that earthquake become readilly apparent.
+Only when the RaspberryShake data are **externally** low pass filtered (post-processed, in this case applying the 5s filter in JamaSeis), does a signal corresponding to that earthquake become readily apparent.
 
 ![RPiShake_5s](https://github.com/user-attachments/assets/79e27686-0a3c-437f-99a8-a4c933cefa1d)
 
