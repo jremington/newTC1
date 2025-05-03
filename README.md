@@ -14,7 +14,7 @@ In JamaSeis, select the SEP detector, not the TC1 detector which expects a DC of
 For seismometer construction notes see https://www.boisestate.edu/eslab/building-a-tc1-system/construction-of-the-tc1/
 
 # Update 4/25/2025:  
-S-wave recording of magnitude 6.3 earthquake near Esmeraldas, Ecuador  
+P-wave recording of magnitude 6.3 earthquake near Esmeraldas, Ecuador  
 
 Event: 2025-04-25 11:44:55 (UTC), GPS coords 1.105°N 79.535°W.
 
