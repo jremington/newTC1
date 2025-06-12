@@ -1,5 +1,7 @@
 # newTC1
 
+Updata 6/11/2025  Added code for ADS1256 24 bit ADC.
+
 This repository presents improved data acquistion code as a replacement for nerdaqII code for DIY TC-1-like vertical axis seismometers. 
 
 <img align="right" height="400" src="https://github.com/user-attachments/assets/85fe7691-ba6a-405a-adf2-42fa054a5c9a">
