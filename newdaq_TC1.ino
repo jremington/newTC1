@@ -1,4 +1,5 @@
-//
+// new dc offset removal 6/11/2025
+// best yet.
 // oversampling ADC for TC1 and related DIY seismometers for Arduino Uno R3 and the like.
 // Started with nerdaqII and replaced the filtering with a
 // fast downsampling (decimating with antialiasing) algorithm in a cascade
@@ -6,10 +7,8 @@
 // Each source sample is convolved with { 0.25, 0.5, 0.25 } before downsampling.
 // for a 16 MHz AVR clock, the ADC rate is 9615.4 sps
 // output sample rate is 18.8 SPS, zero centered.
-// S. James Remington 4/2025or a 16 MHz AVR clock, the ADC rate is 9615.4 sps
+// S. James Remington 4/2025
 
-// update 5/28/2025 increase FILTERSHIFT to 12, turn off digital input on ADC0
-// estimate DC offset at startup
 
 #include <avr/io.h>
 #include <avr/interrupt.h>
@@ -21,21 +20,14 @@ volatile unsigned long current_sum;
 volatile boolean next_sample_ready;
 volatile unsigned int next_sample;
 
-
-
 // low pass filter and parameters for DC offset removal
-// see nice discussion at
-// https://openenergymonitor.org/emon/buildingblocks/digital-filters-for-offset-removal
-// time constant for 10 bit shift =(1-1/1024)/(1/1024)  = 1023 sample intervals
+// smoothing factor for DC offset = FILTER_ALPHA
+#define FILTER_ALPHA (0.003)  //time constant about 40 seconds at 18 SPS
 
-// now upped to 12 bit shift, as offset oscillations noted for genuine earthquake signals
-#define FILTERSHIFT 12
-#define FILTER_ROUNDING ((int32_t)1L<<11)
+// DC offset variable
+float dc_offset; //value of DC offset
 
-// DC offset variables
-int32_t dc_offset = 32700L; //guess at DC offset
-int32_t f_dc_offset = (32700L << FILTERSHIFT); //filtered_dc_offset (guess)
-int16_t result = 0;
+int result = 0;
 
 void initADC() {
 
@@ -93,10 +85,10 @@ void setup() {
     next_sample_ready = false;
     sum += next_sample;
   }
-  dc_offset = (sum + 250L) / 500L;  //rounded
-  f_dc_offset = dc_offset << FILTERSHIFT;
+  dc_offset = (sum + 250L) / 500L;
   // Serial.print("DC offset: ");
-  // Serial.println(dc_offset);  //about 33009 in tests
+  // Serial.println(dc_offset);
+  //  dc_offset += 500; //test (removed as expected)
 }
 
 long int filter_state[2] = {0}; //states of downsample filters
@@ -104,7 +96,9 @@ long int filter_state[2] = {0}; //states of downsample filters
 void loop() {
 
   static int first = true; //skip printing first filtered value
+
   unsigned long output_sample[3] = {0}; //array for output (second) downsample step
+
   unsigned int filtered_signal;
 
   // cascade of decimating low pass filters
@@ -136,12 +130,14 @@ void loop() {
   output_sample[3] += filter_state[1];
 
   filtered_signal = (unsigned int) output_sample[3];
-  result = filtered_signal - dc_offset;
-  f_dc_offset += (int32_t)result; //update filter
-  dc_offset = ((f_dc_offset) + FILTER_ROUNDING) >> FILTERSHIFT;
+  result = filtered_signal - (int)(dc_offset + 0.5);  //corrected value
+ 
+  // update low pass DC offset
+  dc_offset += (filtered_signal - dc_offset)*FILTER_ALPHA;
 
   //  Serial.print(filtered_signal);
   //  Serial.print(", ");
   if (!first) Serial.println(result);
   else first = false;
+
 }
