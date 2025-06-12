@@ -1,9 +1,12 @@
 # newTC1
 
-Updata 6/11/2025  Added code for ADS1256 24 bit ADC.
+This repository presents improved data acquistion code as a replacement for nerdaqII code for DIY TC-1-like vertical axis seismometers.
 
-This repository presents improved data acquistion code as a replacement for nerdaqII code for DIY TC-1-like vertical axis seismometers. 
-
+# Update 6/11/2025  
+Added code for Hiltego ADS1256 24 bit ADC and Racotech geophone, used in Raspberry Shake
+https://mindsetsonline.co.uk/shop/racotech-4-5hz-geophone/
+Comparable or better performance to TC1.
+ 
 <img align="right" height="400" src="https://github.com/user-attachments/assets/85fe7691-ba6a-405a-adf2-42fa054a5c9a">
 
 The [nerdaqII code](https://github.com/brianxfury/Low-Cost-Arduino-based-Seismometer-Project/tree/master) employs an odd combination of filters that interact to produce a bizarre oscillatory response to an impulse, which takes a couple of minutes to settle. I don't think it was ever tested properly. The code posted here replaces it with an advanced decimating, downsampling antialiasing filter, which however uses the same oversampling and averaging approach to (theoretically) get 16 bits resolution from a 10 bit ADC. Four sets of 128 raw data samples are averaged and downsampled+antialiased to produce each data point.
@@ -30,7 +33,7 @@ X-axis scale is seconds.
 
 I've recently spent some time experimenting with a setup very similar to the RaspberryShake (same 4.5 Hz geophone, SeismicStream 24bit, 25 - 100 SPS ADC module), and have examined data sets available to the public from RaspberryShake stations. 
 
-I am very disappointed in their performance. I have concluded that without great care in filtering the data, the RaspberryShake is **not an improvement** over DIY TC-1-like seismometers, at least in very quiet locations like mine. The extra resolution, higher bandwidth and sensitivity of the geophone and 24 bit ADC appear to result mostly in additional noise, actually reducing the signal to noise ratio (SNR) for low frequency signals from distant earthquakes.
+I am disappointed in their performance. I have concluded that without great care in filtering the data, the RaspberryShake is **not an improvement** over DIY TC-1-like seismometers, at least in very quiet locations like mine. The extra resolution, higher bandwidth and sensitivity of the geophone and 24 bit ADC appear to result mostly in additional noise, actually reducing the signal to noise ratio (SNR) for low frequency signals from distant earthquakes.
 
 I'm not the first to comment on this, for example see this summary at: https://soylentnews.org/submit.pl?op=viewsub&subid=64699
 The author's solution was a DIY swinging boom seismometer with very low frequency response: https://spectrum.ieee.org/build-a-better-diy-seismometer
